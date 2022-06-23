@@ -18,6 +18,7 @@ public abstract class BasicTest {
     protected SignUpPage signUpPage;
     protected CitiesPage citiesPage;
     protected MessagePopUpPage messagePopUpPage;
+    protected ProfilePage profilePage;
 
     @BeforeClass
     public void beforeClass() {
@@ -34,6 +35,7 @@ public abstract class BasicTest {
         signUpPage = new SignUpPage(driver);
         citiesPage = new CitiesPage(driver);
         messagePopUpPage = new MessagePopUpPage(driver);
+        profilePage = new ProfilePage(driver);
     }
 
     @BeforeMethod
